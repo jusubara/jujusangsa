@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# jujusangsa.com
 
-## Getting Started
+쥬쥬상사 회사소개 및 앱 포트폴리오 사이트. Next.js (App Router) + Tailwind CSS.
 
-First, run the development server:
+## 페이지 구성
+
+- `/` — 회사 소개, 앱 포트폴리오
+- `/logbook` — 이스타항공 모바일 파일럿 로그북 앱 소개
+- `/privacy` — 개인정보처리방침
+- `/support` — 지원 / 자주 묻는 질문
+
+## 시작하기
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000 에서 확인할 수 있습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 스크린샷 추가하기
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`/logbook` 페이지는 `public/screenshots/` 폴더의 이미지 6장을 사용합니다.
+아래 파일명으로 넣어주세요 (자세한 내용은 `public/screenshots/README.txt` 참고):
 
-## Learn More
+```
+public/screenshots/1-dashboard.png
+public/screenshots/2-logbook-list.png
+public/screenshots/3-edit-record.png
+public/screenshots/4-file-import.png
+public/screenshots/5-guide.png
+public/screenshots/6-about.png
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 배포 (Vercel)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. GitHub 저장소에 push
+2. [vercel.com/new](https://vercel.com/new)에서 저장소 import
+3. 카페24에서 구매한 `jujusangsa.com` 도메인을 Vercel 프로젝트의 Domains 설정에 연결
+   (카페24 DNS에 Vercel이 안내하는 A/CNAME 레코드 등록)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 빌드 확인
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+```

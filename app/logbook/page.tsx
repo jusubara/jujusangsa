@@ -56,7 +56,7 @@ export default function LogbookPage() {
             파일럿 로그북
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-red-100">
-            조종사의 비행 기록 작성, 조회, 백업, 출력을 하나의 앱에서.
+            조종사의 비행 기록 작성, 조회, 백업, 출력을 하나의 앱에서.<br />
             현장에서 실제로 쓰는 로그북 양식을 그대로 옮겨왔습니다.
           </p>
           <DownloadButtons />

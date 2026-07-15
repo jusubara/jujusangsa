@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
 
@@ -32,7 +33,8 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-lg font-bold tracking-tight text-neutral-900">
+        <Link href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight text-neutral-900">
+          <Image src="/logo.png" alt="쥬쥬상사 로고" width={28} height={28} className="rounded-md" />
           쥬쥬상사
         </Link>
         <nav className="flex items-center gap-6 text-sm text-neutral-600">

@@ -112,7 +112,7 @@ export default function LogbookPage() {
             <dl className="mt-4 space-y-2 text-sm text-neutral-600">
               <div className="flex gap-2">
                 <dt className="w-20 shrink-0 text-neutral-400">버전</dt>
-                <dd>1.0.0</dd>
+                <dd>1.0.1</dd>
               </div>
               <div className="flex gap-2">
                 <dt className="w-20 shrink-0 text-neutral-400">개발</dt>

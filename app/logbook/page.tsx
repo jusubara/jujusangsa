@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import DownloadButtons from "./DownloadButtons";
 
 export const metadata: Metadata = {
   title: "이스타항공 모바일 파일럿 로그북",
@@ -58,6 +59,7 @@ export default function LogbookPage() {
             조종사의 비행 기록 작성, 조회, 백업, 출력을 하나의 앱에서.
             현장에서 실제로 쓰는 로그북 양식을 그대로 옮겨왔습니다.
           </p>
+          <DownloadButtons />
         </div>
       </section>
 

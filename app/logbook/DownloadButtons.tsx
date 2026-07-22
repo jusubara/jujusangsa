@@ -1,8 +1,7 @@
 "use client";
 
-// iOS 앱스토어 출시 후 아래 href를 앱스토어 링크로 교체하세요.
-// 예: href="https://apps.apple.com/app/id000000000"
-const IOS_APP_STORE_URL = ""; // TODO: 앱스토어 링크로 교체
+const IOS_APP_STORE_URL =
+  "https://apps.apple.com/kr/app/mobile-pilots-logbook/id6789037871";
 
 const ANDROID_APK_URL =
   "https://expo.dev/artifacts/eas/-z7NM0DVikrmijBChCwjFqy-U71kkHDn-nufnlvWc8s.apk";
@@ -56,14 +55,16 @@ function AndroidIcon() {
 export default function DownloadButtons() {
   return (
     <div className="mt-8 flex flex-wrap gap-3">
-      {/* iOS 버튼 — 앱스토어 출시 전까지 alert 표시 */}
-      <button
-        onClick={() => alert("아직 준비중입니다")}
+      {/* iOS 버튼 — 앱스토어 링크 */}
+      <a
+        href={IOS_APP_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-6 py-3 text-sm font-medium text-neutral-700 transition hover:bg-neutral-50"
       >
         <AppleIcon />
-        iOS 앱스토어 (준비중)
-      </button>
+        iOS 앱스토어
+      </a>
 
       {/* Android 버튼 — APK 직접 다운로드 */}
       <a

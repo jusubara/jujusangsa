@@ -51,9 +51,7 @@ export default function LogbookPage() {
             EastarJet Mobile Pilot&apos;s Logbook
           </p>
           <h1 className="mt-4 max-w-xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-            이스타항공 모바일
-            <br />
-            파일럿 로그북
+            모바일 파일럿 로그북
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-red-100">
             조종사의 비행 기록 작성, 조회, 백업, 출력을 하나의 앱에서.<br />
@@ -112,7 +110,7 @@ export default function LogbookPage() {
             <dl className="mt-4 space-y-2 text-sm text-neutral-600">
               <div className="flex gap-2">
                 <dt className="w-20 shrink-0 text-neutral-400">버전</dt>
-                <dd>1.0.1</dd>
+                <dd>1.2.1</dd>
               </div>
               <div className="flex gap-2">
                 <dt className="w-20 shrink-0 text-neutral-400">개발</dt>

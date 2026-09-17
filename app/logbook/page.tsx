@@ -132,7 +132,7 @@ export default function LogbookPage() {
           <div>
             <h2 className="text-lg font-semibold">더 알아보기</h2>
             <div className="mt-4 flex flex-col gap-2 text-sm">
-              <Link href="/privacy" className="text-red-600 hover:underline">
+              <Link href="/logbook/privacy" className="text-red-600 hover:underline">
                 개인정보처리방침 보기 →
               </Link>
               <Link href="/support" className="text-red-600 hover:underline">

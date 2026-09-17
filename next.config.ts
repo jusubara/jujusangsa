@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      {
+        source: "/privacy",
+        destination: "/logbook/privacy",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

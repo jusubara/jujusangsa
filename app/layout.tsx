@@ -25,6 +25,7 @@ export const metadata: Metadata = {
 const NAV_LINKS = [
   { href: "/", label: "홈" },
   { href: "/logbook", label: "파일럿 로그북" },
+  { href: "/layoverplace", label: "레이오버 플레이스" },
   { href: "/support", label: "지원" },
 ];
 

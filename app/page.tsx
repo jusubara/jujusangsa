@@ -80,9 +80,32 @@ export default function Home() {
             </div>
           </Link>
 
-          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-black/10 bg-white p-8 text-center text-neutral-400">
-            <p className="text-sm font-medium">다음 앱을 준비 중입니다</p>
-          </div>
+          <Link
+            href="/layoverplace"
+            className="group block overflow-hidden rounded-2xl border border-black/10 bg-white transition-shadow hover:shadow-lg"
+          >
+            <div className="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-sky-500 to-teal-700 p-8">
+              <div className="text-center text-white">
+                <p className="text-xs font-semibold tracking-widest opacity-80">
+                  LAYOVER PLACE
+                </p>
+                <p className="mt-2 text-xl font-bold leading-snug">
+                  레이오버 플레이스
+                </p>
+              </div>
+            </div>
+            <div className="p-6">
+              <h3 className="font-semibold text-neutral-900">
+                레이오버 플레이스
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-neutral-600">
+                승무원 간 레이오버 도시 정보(맛집·쇼핑·명소)를 공유하는 폐쇄형 커뮤니티 앱.
+              </p>
+              <span className="mt-4 inline-block text-sm font-semibold text-sky-600 group-hover:underline">
+                자세히 보기 →
+              </span>
+            </div>
+          </Link>
         </div>
       </section>
     </div>

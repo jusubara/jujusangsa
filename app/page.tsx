@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -56,11 +57,18 @@ export default function Home() {
             className="group block overflow-hidden rounded-2xl border border-black/10 bg-white transition-shadow hover:shadow-lg"
           >
             <div className="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-red-600 to-red-800 p-8">
-              <div className="text-center text-white">
+              <div className="flex flex-col items-center gap-3 text-center text-white">
+                <Image
+                  src="/icons/logbook.png"
+                  alt="이스타항공 모바일 파일럿 로그북 아이콘"
+                  width={80}
+                  height={80}
+                  className="rounded-2xl shadow-md"
+                />
                 <p className="text-xs font-semibold tracking-widest opacity-80">
                   EASTAR JET
                 </p>
-                <p className="mt-2 text-xl font-bold leading-snug">
+                <p className="text-xl font-bold leading-snug">
                   모바일 파일럿 로그북
                 </p>
               </div>
@@ -84,11 +92,18 @@ export default function Home() {
             className="group block overflow-hidden rounded-2xl border border-black/10 bg-white transition-shadow hover:shadow-lg"
           >
             <div className="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-sky-500 to-teal-700 p-8">
-              <div className="text-center text-white">
+              <div className="flex flex-col items-center gap-3 text-center text-white">
+                <Image
+                  src="/icons/layoverplace.png"
+                  alt="레이오버 플레이스 아이콘"
+                  width={80}
+                  height={80}
+                  className="rounded-2xl shadow-md"
+                />
                 <p className="text-xs font-semibold tracking-widest opacity-80">
                   LAYOVER PLACE
                 </p>
-                <p className="mt-2 text-xl font-bold leading-snug">
+                <p className="text-xl font-bold leading-snug">
                   레이오버 플레이스
                 </p>
               </div>

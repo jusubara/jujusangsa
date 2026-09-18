@@ -14,17 +14,17 @@ export default function Home() {
           실용적인 모바일 앱
         </h1>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-600">
-          쥬쥬상사는 실제 업무 현장의 불편함에서 출발한 앱을 만듭니다.
-          첫 번째 프로젝트는 항공사 조종사를 위한 비행 기록 앱,
-          &lsquo;이스타항공 모바일 파일럿 로그북&rsquo;입니다.
+          쥬쥬상사는 특정 직군의 실무에 진짜 필요한 기능에 집중한 모바일 앱을 만듭니다.
+          화려한 기능보다, 매일 반복되는 일을 얼마나 가볍게 만들 수 있는지를 봅니다.
+          현재는 항공 승무원을 위한 두 가지 앱을 운영하고 있습니다.
         </p>
         <div className="mt-10 flex gap-4">
-          <Link
-            href="/logbook"
+          <a
+            href="#portfolio"
             className="rounded-full bg-neutral-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-neutral-700"
           >
             앱 소개 보기
-          </Link>
+          </a>
           <a
             href="mailto:jujusangsacompany@gmail.com"
             className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-800 transition-colors hover:border-neutral-500"
@@ -39,17 +39,16 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-6 py-20">
           <h2 className="text-2xl font-bold tracking-tight">회사 소개</h2>
           <p className="mt-6 max-w-3xl leading-relaxed text-neutral-600">
-            쥬쥬상사(JUJUSANGSA)는 특정 업계·직군의 실무 워크플로우에 맞춘
-            모바일 앱을 개발합니다. 크고 화려한 기능보다, 매일 반복되는
-            작업을 얼마나 빠르고 정확하게 처리할 수 있는지를 우선순위로 둡니다.
-            모든 데이터는 사용자 기기 안에만 저장되는 방식을 기본 원칙으로,
-            개인정보를 최소한으로 다루는 앱을 지향합니다.
+            쥬쥬상사(JUJUSANGSA)는 특정 업계·직군의 실무 워크플로우에 맞춘 모바일 앱을
+            개발합니다. 크고 화려한 기능보다, 매일 반복되는 작업을 얼마나 빠르고 정확하게
+            처리할 수 있는지를 우선순위로 둡니다. 개인정보는 서비스 제공에 필요한 최소한의
+            범위에서만 수집하고, 목적 외 용도로 사용하지 않습니다.
           </p>
         </div>
       </section>
 
       {/* Portfolio */}
-      <section className="mx-auto max-w-5xl px-6 py-20">
+      <section id="portfolio" className="mx-auto max-w-5xl px-6 py-20">
         <h2 className="text-2xl font-bold tracking-tight">앱 포트폴리오</h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
           <Link

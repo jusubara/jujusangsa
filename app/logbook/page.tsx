@@ -29,11 +29,11 @@ const FEATURES = [
   },
   {
     title: "PDF 출력",
-    desc: "제출·보관용 B5 사이즈 출력 포맷으로 로그북을 PDF로 저장합니다.",
+    desc: "제출·보관용 B5, A4 사이즈 출력 포맷으로 로그북을 PDF로 저장합니다.",
   },
   {
     title: "자동 합계 계산",
-    desc: "연도별 · 기간별 PIC, BLOCK, NIGHT, INST, TO-D 합계를 자동으로 집계해 상단에 표시합니다.",
+    desc: "연도별 · 기간별 BLOCK, NIGHT, INST, TO, LD 합계를 자동으로 집계해 상단에 표시합니다.",
   },
   {
     title: "완전한 로컬 저장",
@@ -47,17 +47,28 @@ export default function LogbookPage() {
       {/* Hero */}
       <section className="bg-gradient-to-b from-red-700 to-red-900 text-white">
         <div className="mx-auto max-w-5xl px-6 py-20">
-          <p className="text-sm font-semibold uppercase tracking-widest text-red-200">
-            EastarJet Mobile Pilot&apos;s Logbook
-          </p>
-          <h1 className="mt-4 max-w-xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-            모바일 파일럿 로그북
-          </h1>
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-red-100">
-            조종사의 비행 기록 작성, 조회, 백업, 출력을 하나의 앱에서.<br />
-            현장에서 실제로 쓰는 로그북 양식을 그대로 옮겨왔습니다.
-          </p>
-          <DownloadButtons />
+          <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:gap-16">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-widest text-red-200">
+                EastarJet Mobile Pilot&apos;s Logbook
+              </p>
+              <h1 className="mt-4 max-w-xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+                모바일 파일럿 로그북
+              </h1>
+              <p className="mt-6 max-w-lg text-lg leading-relaxed text-red-100">
+                조종사의 비행 기록 작성, 조회, 백업, 출력을 하나의 앱에서.<br />
+                현장에서 실제로 쓰는 로그북 양식을 그대로 옮겨왔습니다.
+              </p>
+              <DownloadButtons />
+            </div>
+            <Image
+              src="/icons/logbook.png"
+              alt="이스타항공 모바일 파일럿 로그북 아이콘"
+              width={120}
+              height={120}
+              className="rounded-3xl shadow-lg shrink-0"
+            />
+          </div>
         </div>
       </section>
 
@@ -110,11 +121,11 @@ export default function LogbookPage() {
             <dl className="mt-4 space-y-2 text-sm text-neutral-600">
               <div className="flex gap-2">
                 <dt className="w-20 shrink-0 text-neutral-400">버전</dt>
-                <dd>1.2.1</dd>
+                <dd>1.3.2</dd>
               </div>
               <div className="flex gap-2">
                 <dt className="w-20 shrink-0 text-neutral-400">개발</dt>
-                <dd>이스타항공 파일럿 전용 내부 앱</dd>
+                <dd>항공사 파일럿 전용 내부 앱</dd>
               </div>
               <div className="flex gap-2">
                 <dt className="w-20 shrink-0 text-neutral-400">문의</dt>
@@ -135,7 +146,7 @@ export default function LogbookPage() {
               <Link href="/logbook/privacy" className="text-red-600 hover:underline">
                 개인정보처리방침 보기 →
               </Link>
-              <Link href="/support" className="text-red-600 hover:underline">
+              <Link href="/logbook/support" className="text-red-600 hover:underline">
                 지원 / 자주 묻는 질문 보기 →
               </Link>
             </div>

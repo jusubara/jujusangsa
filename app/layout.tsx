@@ -26,7 +26,6 @@ const NAV_LINKS = [
   { href: "/", label: "홈" },
   { href: "/logbook", label: "파일럿 로그북" },
   { href: "/layoverplace", label: "레이오버 플레이스" },
-  { href: "/support", label: "지원" },
 ];
 
 function Header() {
@@ -60,9 +59,6 @@ function Footer() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-medium text-neutral-700">쥬쥬상사 · JUJUSANGSA</p>
           <nav className="flex gap-5">
-            <Link href="/support" className="hover:text-neutral-900">
-              지원
-            </Link>
             <a href="mailto:jujusangsacompany@gmail.com" className="hover:text-neutral-900">
               문의하기
             </a>

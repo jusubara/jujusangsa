@@ -5,33 +5,67 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="mx-auto max-w-5xl px-6 pb-20 pt-24 sm:pt-32">
-        <p className="text-sm font-semibold uppercase tracking-widest text-red-600">
-          JUJUSANGSA
-        </p>
-        <h1 className="mt-4 max-w-2xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-          현업의 문제를 아는 사람이 만드는,
-          <br />
-          실용적인 모바일 앱
-        </h1>
-        <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-600">
-          쥬쥬상사는 특정 직군의 실무에 진짜 필요한 기능에 집중한 모바일 앱을 만듭니다.
-          화려한 기능보다, 매일 반복되는 일을 얼마나 가볍게 만들 수 있는지를 봅니다.
-          현재는 항공 승무원을 위한 두 가지 앱을 운영하고 있습니다.
-        </p>
-        <div className="mt-10 flex gap-4">
-          <a
-            href="#portfolio"
-            className="rounded-full bg-neutral-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-neutral-700"
-          >
-            앱 소개 보기
-          </a>
-          <a
-            href="mailto:jujusangsacompany@gmail.com"
-            className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-800 transition-colors hover:border-neutral-500"
-          >
-            문의하기
-          </a>
+      <section className="relative overflow-hidden bg-neutral-50">
+        {/* 도트 그리드 배경 */}
+        <div
+          className="pointer-events-none absolute inset-0 opacity-40"
+          style={{
+            backgroundImage: "radial-gradient(circle, #d4d4d4 1px, transparent 1px)",
+            backgroundSize: "24px 24px",
+            maskImage: "linear-gradient(to bottom, black 40%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to bottom, black 40%, transparent 100%)",
+          }}
+        />
+        <div className="relative z-10 mx-auto max-w-5xl px-6 pb-20 pt-24 sm:pt-32">
+          <div className="flex flex-col items-start gap-12 sm:flex-row sm:items-center sm:justify-between">
+            {/* 텍스트 */}
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-widest text-red-600">
+                JUJUSANGSA
+              </p>
+              <h1 className="mt-4 max-w-2xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+                현업의 문제를 아는 사람이 만드는,
+                <br />
+                실용적인 모바일 앱
+              </h1>
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-600">
+                쥬쥬상사는 특정 직군의 실무에 진짜 필요한 기능에 집중한 모바일 앱을 만듭니다.
+                화려한 기능보다, 매일 반복되는 일을 얼마나 가볍게 만들 수 있는지를 봅니다.
+                현재는 항공 승무원을 위한 두 가지 앱을 운영하고 있습니다.
+              </p>
+              <div className="mt-10 flex gap-4">
+                <a
+                  href="#portfolio"
+                  className="rounded-full bg-neutral-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-neutral-700"
+                >
+                  앱 소개 보기
+                </a>
+                <a
+                  href="mailto:jujusangsacompany@gmail.com"
+                  className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-800 transition-colors hover:border-neutral-500"
+                >
+                  문의하기
+                </a>
+              </div>
+            </div>
+            {/* 앱 아이콘 비주얼 */}
+            <div className="flex shrink-0 items-end self-center sm:self-auto">
+              <Image
+                src="/icons/logbook.png"
+                alt="이스타항공 모바일 파일럿 로그북 아이콘"
+                width={120}
+                height={120}
+                className="-rotate-6 rounded-3xl shadow-xl"
+              />
+              <Image
+                src="/icons/layoverplace.png"
+                alt="레이오버 플레이스 아이콘"
+                width={120}
+                height={120}
+                className="-ml-8 rotate-6 rounded-3xl shadow-xl"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -66,7 +100,7 @@ export default function Home() {
                   className="rounded-2xl shadow-md"
                 />
                 <p className="text-xs font-semibold tracking-widest opacity-80">
-                  EASTAR JET
+                  MOBILE PILOT'S LOGBOOK
                 </p>
                 <p className="text-xl font-bold leading-snug">
                   모바일 파일럿 로그북
@@ -75,7 +109,7 @@ export default function Home() {
             </div>
             <div className="p-6">
               <h3 className="font-semibold text-neutral-900">
-                이스타항공 모바일 파일럿 로그북
+                모바일 파일럿 로그북
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-neutral-600">
                 조종사를 위한 비행 기록 관리 앱. CSV 불러오기/내보내기,

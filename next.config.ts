@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/logbook/privacy",
         permanent: true,
       },
+      {
+        source: "/support",
+        destination: "/logbook/support",
+        permanent: true,
+      },
     ];
   },
 };

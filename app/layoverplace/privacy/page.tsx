@@ -153,12 +153,9 @@ const SECTIONS = [
       <div className="mt-3 leading-relaxed text-neutral-600">
         <p>회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고 이용자의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
         <ul className="mt-2 list-disc pl-5 space-y-1">
-          <li>회사명: 쥬쥬상사 (JUJU SANGSA)</li>
-          <li>대표자: 김주섭</li>
-          <li>사업자등록번호: 216-30-01412</li>
-          <li>이메일: jujusangsacompany@gmail.com</li>
+      
         </ul>
-        <p className="mt-3">개인정보와 관련한 문의사항이 있으시면 위 연락처로 연락 주시기 바라며, 회사는 이용자의 문의에 대해 지체 없이 답변 및 처리해드릴 것입니다.</p>
+        <p className="mt-3">개인정보와 관련한 문의사항이 있으시면 페이지 하단의 연락처로 연락 주시기 바라며, 회사는 이용자의 문의에 대해 지체 없이 답변 및 처리해드릴 것입니다.</p>
       </div>
     ),
   },
@@ -182,7 +179,7 @@ export default function LayoverPlacePrivacyPage() {
         개인정보처리방침
       </h1>
       <p className="mt-3 text-sm text-neutral-500">
-        레이오버 플레이스 · 공고일자: 2026년 9월 10일 · 시행일자: 2026년 9월 10일
+        레이오버 플레이스 · 최종 수정일: 2026년 9월 18일
       </p>
       <p className="mt-4 leading-relaxed text-neutral-600">
         쥬쥬상사(JUJU SANGSA)(이하 "회사")는 「개인정보 보호법」 등 관련 법령을 준수하며, 회사가 제공하는 모바일 애플리케이션 "레이오버 플레이스"(이하 "서비스")를 이용하는 이용자의 개인정보를 보호하기 위해 다음과 같이 개인정보처리방침을 수립·공개합니다.
@@ -200,7 +197,7 @@ export default function LayoverPlacePrivacyPage() {
           <dl className="space-y-2 text-sm">
             <div className="flex gap-2">
               <dt className="w-28 shrink-0 text-neutral-400">회사명</dt>
-              <dd className="text-neutral-800">쥬쥬상사 (JUJU SANGSA)</dd>
+              <dd className="text-neutral-800">쥬쥬상사 (JUJUSANGSA)</dd>
             </div>
             <div className="flex gap-2">
               <dt className="w-28 shrink-0 text-neutral-400">대표자</dt>

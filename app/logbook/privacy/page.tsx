@@ -38,7 +38,7 @@ export default function PrivacyPage() {
         개인정보처리방침
       </h1>
       <p className="mt-3 text-sm text-neutral-500">
-        이스타항공 모바일 파일럿 로그북 · 최종 수정일: 2026년 7월 10일
+        이스타항공 모바일 파일럿 로그북 · 최종 수정일: 2026년 9월 18일
       </p>
 
       <div className="mt-12 space-y-10">
@@ -54,15 +54,23 @@ export default function PrivacyPage() {
         <section className="rounded-2xl border border-black/10 bg-neutral-50 p-6">
           <dl className="space-y-2 text-sm">
             <div className="flex gap-2">
-              <dt className="w-20 shrink-0 text-neutral-400">개발자</dt>
-              <dd className="text-neutral-800">Jusub Kim</dd>
+              <dt className="w-28 shrink-0 text-neutral-400">회사명</dt>
+              <dd className="text-neutral-800">쥬쥬상사 (JUJUSANGSA)</dd>
             </div>
             <div className="flex gap-2">
-              <dt className="w-20 shrink-0 text-neutral-400">이메일</dt>
+              <dt className="w-28 shrink-0 text-neutral-400">대표자</dt>
+              <dd className="text-neutral-800">김주섭</dd>
+            </div>
+            <div className="flex gap-2">
+              <dt className="w-28 shrink-0 text-neutral-400">사업자등록번호</dt>
+              <dd className="text-neutral-800">216-30-01412</dd>
+            </div>
+            <div className="flex gap-2">
+              <dt className="w-28 shrink-0 text-neutral-400">이메일</dt>
               <dd>
                 <a
                   href="mailto:jujusangsacompany@gmail.com"
-                  className="text-red-600 hover:underline"
+                  className="text-sky-600 hover:underline"
                 >
                   jujusangsacompany@gmail.com
                 </a>

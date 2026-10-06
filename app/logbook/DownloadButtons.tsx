@@ -3,8 +3,8 @@
 const IOS_APP_STORE_URL =
   "https://apps.apple.com/kr/app/mobile-pilots-logbook/id6789037871";
 
-const ANDROID_APK_URL =
-  "https://expo.dev/artifacts/eas/-z7NM0DVikrmijBChCwjFqy-U71kkHDn-nufnlvWc8s.apk";
+const ANDROID_PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.jusubara.juvismobile4&hl=ko";
 
 function AppleIcon() {
   return (
@@ -66,14 +66,15 @@ export default function DownloadButtons() {
         iOS 앱스토어
       </a>
 
-      {/* Android 버튼 — APK 직접 다운로드 */}
+      {/* Android 버튼 — 플레이스토어 링크 */}
       <a
-        href={ANDROID_APK_URL}
-        download
+        href={ANDROID_PLAY_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-6 py-3 text-sm font-medium text-neutral-700 transition hover:bg-neutral-50"
       >
         <AndroidIcon />
-        Android 다운로드
+        Android 플레이스토어
       </a>
     </div>
   );

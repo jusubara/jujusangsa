@@ -2,31 +2,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "개인정보처리방침",
-  description: "이스타항공 모바일 파일럿 로그북 개인정보처리방침",
+  description: "모바일 파일럿 로그북 개인정보처리방침",
 };
-
-const SECTIONS = [
-  {
-    title: "1. 수집하는 정보",
-    body: "본 앱(이스타항공 모바일 파일럿 로그북)은 회원가입이나 로그인 기능이 없으며, 어떠한 개인정보도 외부 서버로 전송하거나 수집하지 않습니다. 사용자가 입력하는 비행 기록(날짜, 편명, 출발/도착지, 비행시간, 동승 승무원 이름 등)은 오직 사용자의 기기 내부에만 저장되며, 개발자를 포함한 어떠한 제3자도 이 데이터에 접근할 수 없습니다.",
-  },
-  {
-    title: "2. 데이터 저장 위치",
-    body: "모든 데이터는 사용자의 iOS 기기 내 로컬 데이터베이스에 저장됩니다. 인터넷 연결 없이도 앱의 모든 기능(비행 기록 작성, 조회, PDF/CSV 내보내기)을 사용할 수 있습니다.",
-  },
-  {
-    title: "3. 데이터 삭제",
-    body: "앱을 삭제하면 기기에 저장된 모든 데이터가 함께 삭제됩니다. 앱 내에서 개별 기록의 수정 및 삭제도 가능합니다.",
-  },
-  {
-    title: "4. 제3자 제공",
-    body: "본 앱은 어떠한 개인정보도 제3자에게 제공하거나 공유하지 않습니다.",
-  },
-  {
-    title: "5. 문의처",
-    body: "본 개인정보처리방침에 대해 문의사항이 있으시면 아래 연락처로 문의해 주시기 바랍니다.",
-  },
-];
 
 export default function PrivacyPage() {
   return (
@@ -38,20 +15,109 @@ export default function PrivacyPage() {
         개인정보처리방침
       </h1>
       <p className="mt-3 text-sm text-neutral-500">
-        이스타항공 모바일 파일럿 로그북 · 최종 수정일: 2026년 9월 18일
+        모바일 파일럿 로그북 · 최종 수정일: 2026년 10월 7일
       </p>
 
       <div className="mt-12 space-y-10">
-        {SECTIONS.map((s) => (
-          <section key={s.title}>
-            <h2 className="text-lg font-semibold text-neutral-900">
-              {s.title}
-            </h2>
-            <p className="mt-3 leading-relaxed text-neutral-600">{s.body}</p>
-          </section>
-        ))}
+        <section>
+          <h2 className="text-lg font-semibold text-neutral-900">
+            1. 수집하는 개인정보
+          </h2>
+          <p className="mt-3 leading-relaxed text-neutral-600">
+            본 앱은 이용자의 개인정보를 수집하거나 서버로 전송하지 않습니다.
+            이용자가 입력한 비행 기록(날짜, 편명, 노선, 비행시간, 편조 이름
+            등)은 모두 이용자의 기기 내부에만 저장됩니다. 개발자는 이
+            데이터에 접근할 수 없습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-semibold text-neutral-900">
+            2. 기기 내 자동 백업
+          </h2>
+          <p className="mt-3 leading-relaxed text-neutral-600">
+            데이터가 변경되면 앱이 백업용 CSV 파일을 기기에 자동으로
+            저장합니다. 이 파일은 이용자의 기기(앱 내부 저장소 또는 이용자가
+            직접 선택한 폴더)에만 저장되며, 외부로 전송되지 않습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-semibold text-neutral-900">
+            3. Google Drive 백업 (선택 기능)
+          </h2>
+          <p className="mt-3 leading-relaxed text-neutral-600">
+            이용자가 직접 선택하는 경우에 한해, 본인의 Google 계정으로
+            로그인하여 비행 기록 백업 파일(CSV)을 본인의 Google Drive에 저장할
+            수 있습니다.
+          </p>
+          <ul className="mt-3 space-y-2 text-neutral-600 leading-relaxed list-none">
+            <li className="flex gap-2">
+              <span className="shrink-0 text-neutral-400">·</span>
+              <span>이 기능은 이용자가 연결하기 전까지 사용되지 않습니다.</span>
+            </li>
+            <li className="flex gap-2">
+              <span className="shrink-0 text-neutral-400">·</span>
+              <span>
+                요청하는 권한은 drive.file 하나이며, 본 앱이 생성한 백업
+                파일에만 접근합니다. 이용자의 Drive에 있는 다른 파일은
+                열람하거나 수정할 수 없습니다.
+              </span>
+            </li>
+            <li className="flex gap-2">
+              <span className="shrink-0 text-neutral-400">·</span>
+              <span>
+                Google 로그인 인증 정보(액세스 토큰)는 이용자의 기기 보안
+                저장소에만 저장됩니다.
+              </span>
+            </li>
+            <li className="flex gap-2">
+              <span className="shrink-0 text-neutral-400">·</span>
+              <span>
+                개발자는 이용자의 Google 계정 정보, 이메일 주소, 백업 파일
+                내용을 수집, 저장, 열람하지 않으며 제3자에게 제공하지
+                않습니다. 백업 파일은 이용자의 기기와 이용자 본인의 Google
+                Drive 사이에서만 전송됩니다.
+              </span>
+            </li>
+            <li className="flex gap-2">
+              <span className="shrink-0 text-neutral-400">·</span>
+              <span>
+                앱의 "저작권 및 문의" 화면에서 언제든 연결을 해제할 수
+                있으며, 연결 해제 시 기기에 저장된 인증 정보가 삭제됩니다.
+                Drive에 올라간 백업 파일은 이용자가 Drive에서 직접 삭제하실
+                수 있습니다.
+              </span>
+            </li>
+          </ul>
+          <div className="mt-4 rounded-xl border border-black/10 bg-neutral-50 p-4 text-sm text-neutral-600 leading-relaxed">
+            <p className="font-semibold text-neutral-700">
+              Google API 서비스 이용자 데이터 정책 준수 안내
+            </p>
+            <p className="mt-1">
+              모바일 파일럿 로그북이 Google API를 통해 받은 정보를 사용하고
+              다른 앱으로 전송할 때는 제한적 사용 요건을 포함한 Google API
+              서비스 사용자 데이터 정책(Google API Services User Data
+              Policy)을 준수합니다.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-semibold text-neutral-900">
+            4. 데이터 삭제
+          </h2>
+          <p className="mt-3 leading-relaxed text-neutral-600">
+            앱을 삭제하면 기기에 저장된 데이터가 함께 삭제됩니다. 기기 내
+            백업 파일과 Google Drive에 저장된 백업 파일은 이용자가 직접
+            삭제하셔야 합니다.
+          </p>
+        </section>
 
         <section className="rounded-2xl border border-black/10 bg-neutral-50 p-6">
+          <h2 className="text-sm font-semibold text-neutral-700 mb-4">
+            5. 문의
+          </h2>
           <dl className="space-y-2 text-sm">
             <div className="flex gap-2">
               <dt className="w-28 shrink-0 text-neutral-400">회사명</dt>

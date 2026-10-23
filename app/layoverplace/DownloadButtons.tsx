@@ -1,4 +1,8 @@
-"use client";
+const IOS_APP_STORE_URL =
+  "https://apps.apple.com/us/app/%EB%A0%88%EC%9D%B4%EC%98%A4%EB%B2%84-%ED%94%8C%EB%A0%88%EC%9D%B4%EC%8A%A4-layover-places/id6813011061";
+
+const ANDROID_PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.jujusangsa.layoverplace&pcampaignid=web_share";
 
 function AppleIcon() {
   return (
@@ -47,27 +51,27 @@ function AndroidIcon() {
 }
 
 export default function DownloadButtons() {
-  const handleClick = () => {
-    alert("현재 스토어 심사중입니다");
-  };
-
   return (
     <div className="mt-8 flex flex-wrap gap-3">
-      <button
-        onClick={handleClick}
+      <a
+        href={IOS_APP_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-6 py-3 text-sm font-medium text-neutral-700 transition hover:bg-neutral-50"
       >
         <AppleIcon />
-        iOS 앱스토어 (심사중)
-      </button>
+        iOS 앱스토어
+      </a>
 
-      <button
-        onClick={handleClick}
+      <a
+        href={ANDROID_PLAY_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-6 py-3 text-sm font-medium text-neutral-700 transition hover:bg-neutral-50"
       >
         <AndroidIcon />
-        Android 플레이스토어 (심사중)
-      </button>
+        Android 플레이스토어
+      </a>
     </div>
   );
 }

@@ -132,6 +132,9 @@ export default function LayoverPlacePage() {
               <Link href="/layoverplace/support" className="text-sky-600 hover:underline">
                 지원 / 자주 묻는 질문 보기 →
               </Link>
+              <Link href="/layoverplace/guide" className="text-sky-600 hover:underline">
+                지도 앱에서 장소 가져오기 →
+              </Link>
             </div>
           </div>
         </div>
